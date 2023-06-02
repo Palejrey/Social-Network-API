@@ -18,7 +18,7 @@ https://drive.google.com/file/d/19ObJD1wgFO_mXC2V-1C25LXrGquS2nQs/view
  ## Contribution 
  > As of currently there are no contribution guidelines 
 ## License 
- The application is covered under the None . 
+None . 
  ## Tests 
  > No tests exsist at the moment. 
  ## Questions 
