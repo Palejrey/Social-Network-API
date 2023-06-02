@@ -20,8 +20,10 @@ module.exports = {
     async createThought(req, res) {
         try {
             const newThought =  new Thought(req.body);
+            const user = await User.findOne({ _id:newThought.userID});
             newThought.save();
-            res.status(200).json(newThought);
+            res.status(200).json(newThought.userID);
+
         } catch (err) {
             res.status(500).json(err);            
         }
