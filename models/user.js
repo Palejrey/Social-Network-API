@@ -28,7 +28,7 @@ const userSchema = new Schema(
         toJSON: {
             virtuals: true,
         },
-        _id: false,
+        id:false
     }
 );
 
@@ -41,12 +41,3 @@ userSchema.virtual('friendCount').get(function () {
 const User = model('user', userSchema);
 
 module.exports = User;
-
-//Save this for later to populate friends in routes
-/*
-User.findOne({ _id: someUserId })
-  .populate('friends')
-  .exec((err, user) => {
-    // 'user' will have the friends field populated with the actual user documents
-  });
-*/

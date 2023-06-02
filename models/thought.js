@@ -21,10 +21,10 @@ const thoughtSchema = new Schema(
         reactions: [reactionSchema],
     },
     {
-        toJSON: {
+        toJSON: { 
             virtuals: true,
         },
-        _id: false,
+        id: false,
     }
 );
 
